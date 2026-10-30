@@ -1,0 +1,13 @@
+{
+  "name": "size",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Size - whole-bag deals on Solana",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "license": "MIT"
+}

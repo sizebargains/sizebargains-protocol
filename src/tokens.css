@@ -1,0 +1,28 @@
+/* The only file allowed to hold colour literals.
+   Every value is a real pixel read from a supplied asset (k-means centroid, snapped to the nearest actual pixel).
+   Logo = brand/LOGO SIZE PNG.png (2000x2000, RGBA). Banner = reference/SAMPUL SIZE JPG.jpg.jpeg (1500x500). */
+:root {
+  --bg: #171715;          /* logo (0,0) - flat backdrop, 53028 of 60000 sampled px */
+  --green: #178b36;       /* logo (1278,543) - frame body */
+  --green-dark: #127530;  /* logo (1299,596) - frame inner edge */
+  --green-deep: #0c5a29;  /* logo (1047,834) - arrow underside */
+  --shade: #15331e;       /* logo (920,994) - darkest green in the arrows */
+  --lime: #92ce5d;        /* logo (804,1105) - arrow fill */
+  --cream: #f5f8a6;       /* logo (968,739) - frame highlight */
+  --ink: #fcfcfc;         /* banner (87,77) - headline white */
+  --neon: #a6fa4c;        /* banner (1171,134) - bright lime glow */
+
+  /* Derived only, never new hex */
+  --panel: color-mix(in srgb, var(--bg), var(--ink) 4%);
+  --wash: color-mix(in srgb, var(--bg), var(--ink) 8%);
+  --line: color-mix(in srgb, var(--bg), var(--ink) 15%);
+  --line-soft: color-mix(in srgb, var(--bg), var(--ink) 10%);
+  --mute: color-mix(in srgb, var(--ink), var(--bg) 40%);
+  --faint: color-mix(in srgb, var(--ink), var(--bg) 62%);
+  --up: var(--lime);
+  --up-wash: color-mix(in srgb, var(--bg), var(--green) 22%);
+  --down: color-mix(in srgb, var(--ink), var(--bg) 34%);
+  --down-wash: color-mix(in srgb, var(--bg), var(--ink) 9%);
+  --glow: color-mix(in srgb, var(--neon) 16%, transparent);
+  --glow-soft: color-mix(in srgb, var(--green) 30%, transparent);
+}

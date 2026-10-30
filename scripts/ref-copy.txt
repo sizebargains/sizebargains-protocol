@@ -1,0 +1,57 @@
+Buy the bag. Sell the bag.
+Leave the chart alone.
+Make an offer on anyone's memecoin bag, or sell yours whole. Every offer is approved by the wallet behind it and checked against its on-chain balance, so size changes hands without a single candle on the chart.
+Markets
+Open offers
+SOL bidding
+SOL asked
+Chart impact
+Get started
+Make an offer
+Look up any wallet
+Sell $100.0K of RENDER
+Example ticket at live prices
+Matching
+Settled
+Seller receives
+Buyer receives
+Sold into the pool
+Sold over the counter
+Offer
+Accepted
+Settled
+Holding a coin we don't list?
+Add it in one tap and anyone can start bidding on it.
+Add a bag
+No open offers yet. Make the first one
+Sort
+Mkt cap
+24h volume
+24h change
+Holders
+Offers
+Coin
+Price
+24H
+Mkt cap
+Volume
+Liquidity
+Holders
+Best bid
+Best ask
+Offers
+Make offer
+Previous
+Next
+Home
+History
+Positions
+Make offer
+Bags
+Add a bag
+Information
+Docs
+Risk
+OTC | Over the Counter for Solana memecoins
+Over the Counter for Solana memecoins
+Connect wallet

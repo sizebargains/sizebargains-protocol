@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Size | Entire-stack deals on Solana</title>
+<meta name="description" content="Name a figure for an entire Solana stack and let its holder answer. Live board of the busiest coins.">
+<!--@theme-->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="assets/logo-128.png">
+<link rel="preload" href="fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+<script>document.documentElement.classList.add("js");try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("rm")}catch(e){}</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<aside class="side" aria-label="Primary">
+  <a class="side-brand" href="#top"><img src="assets/logo-128.png" width="28" height="28" alt="Size logo"><span>SIZE</span></a>
+  <nav>
+    <a class="nav-link is-on" href="#top" data-nav="top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Overview</a>
+    <a class="nav-link" href="#board" data-nav="board"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Board</a>
+    <a class="nav-link" href="#flow" data-nav="flow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h13M16 3l4 4-4 4M17 17H4M8 13l-4 4 4 4"/></svg>Flow</a>
+    <a class="nav-link" href="#facts" data-nav="facts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Facts</a>
+    <div class="side-label">More</div>
+    <span class="nav-link is-inert" data-record="whitepaper" data-state="absent" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2zM4 21V5"/></svg>Whitepaper<span class="tag">pending</span></span>
+    <a class="nav-link" href="#risks" data-nav="risks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg>Risks</a>
+  </nav>
+  <div class="side-foot">size.bargains</div>
+</aside>
+
+<div class="shell" id="top">
+  <header class="top">
+    <a class="top-brand" href="#top"><img src="assets/logo-128.png" width="28" height="28" alt="Size logo"><span>SIZE</span></a>
+    <div class="crumb">Size &nbsp;/&nbsp; <b>Overview</b></div>
+    <div class="spacer"></div>
+    <div class="pill" id="feed-pill" data-feed="idle" role="status"><i class="live-dot"></i><span id="feed-text">Waiting</span></div>
+    <!--@social-->
+  </header>
+
+  <!--@ca-->
+
+  <nav class="chips" aria-label="Sections">
+    <a href="#board">Board</a><a href="#flow">Flow</a><a href="#facts">Facts</a><a href="#risks">Risks</a>
+  </nav>
+
+  <div class="ticker" aria-label="Moving quotes"><div class="marquee" id="marquee"><span class="tick-skel skeleton"></span><span class="tick-skel skeleton"></span><span class="tick-skel skeleton"></span><span class="tick-skel skeleton"></span><span class="tick-skel skeleton"></span><span class="tick-skel skeleton"></span></div></div>
+
+  <main class="main">
+    <section class="card hero" id="hero" data-spot>
+      <div class="layer mesh" data-depth="0.35" aria-hidden="true"></div>
+      <div class="layer dots" data-depth="0.15" aria-hidden="true"></div>
+      <div class="layer ghost" data-depth="0.7" aria-hidden="true"><img src="assets/logo-512.png" alt="" width="512" height="512"></div>
+
+      <div class="hero-copy">
+        <img class="hero-mark" src="assets/logo-512.png" width="56" height="56" alt="Size logo" data-reveal>
+        <h1 data-reveal>Name your number.<br>Take the entire stack.<br><em>Keep candles out of it.</em></h1>
+        <p class="lead" data-reveal>Pick a Solana stack you want and attach a price to the entire pile. Its holder then answers yes or no. Nothing reaches an order book while you two talk.</p>
+        <dl class="stats" data-stagger>
+          <div class="stat" data-reveal><dt>Coins on board</dt><dd id="st-count">&mdash;</dd></div>
+          <div class="stat" data-reveal><dt>Day volume</dt><dd id="st-vol">&mdash;</dd></div>
+          <div class="stat" data-reveal><dt>Active deals</dt><dd class="is-pending">pending</dd></div>
+          <div class="stat" data-reveal><dt>Bids posted</dt><dd class="is-pending">pending</dd></div>
+          <div class="stat" data-reveal><dt>Price drag</dt><dd class="is-pending">pending</dd></div>
+        </dl>
+        <div class="btns" data-reveal>
+          <a class="btn primary" href="#board">Browse the board <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          <a class="btn" href="#flow">See the flow</a>
+        </div>
+      </div>
+
+      <aside class="hero-ticket" aria-label="Worked sample" data-reveal>
+        <div class="ticket" id="ticket">
+          <div class="t-head">
+            <span class="coin" id="t-coin"><span>?</span></span>
+            <div class="t-title"><b id="t-title">Stack of &mdash;</b><span>Worked sample, live quotes</span></div>
+            <div class="t-status" aria-hidden="true"><span class="pend">Haggling</span><span class="done">Closed</span></div>
+          </div>
+          <div class="t-amount"><label for="t-usd">Stack worth (USD)</label><input id="t-usd" inputmode="decimal" autocomplete="off" value="10000"></div>
+          <div class="t-cols">
+            <div class="t-box"><small>You send</small><strong><span id="t-send">&mdash;</span><i>SOL</i></strong></div>
+            <div class="t-box"><small>You receive</small><strong><span id="t-get">&mdash;</span><i id="t-sym"></i></strong></div>
+          </div>
+          <div class="t-bars">
+            <div><div class="bar-row"><span>Dumped at market</span><b class="down" id="t-drag">&mdash;</b></div><div class="bar"><i class="pool" id="t-drag-bar" style="transform:scaleX(0)"></i></div></div>
+            <div><div class="bar-row"><span>Passed straight across</span><b class="up">0.00%</b></div><div class="bar"><i class="direct" style="transform:scaleX(0)"></i></div></div>
+          </div>
+          <div class="steps"><div class="route"><i></i></div><span>Propose</span><span>Agreed</span><span>Delivered</span></div>
+        </div>
+        <div class="t-chips" id="t-chips" role="group" aria-label="Switch token"></div>
+      </aside>
+    </section>
+
+    <section class="strip" data-reveal>
+      <p><b>The board follows the heat.</b>It shows the ten Solana coins moving the most dollars right now, read straight from public market feeds.</p>
+    </section>
+
+    <section class="section" id="board">
+      <div class="s-head" data-reveal>
+        <h2>Board</h2><span class="sub">Ten busiest Solana coins</span>
+        <div class="tabs" role="tablist" aria-label="Order the board">
+          <button class="tab" role="tab" aria-selected="true" data-sort="vol">Volume</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="chg">Change</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="liq">Depth</button>
+        </div>
+      </div>
+      <div class="card board" data-reveal>
+        <div class="row head" aria-hidden="true"><span>#</span><span>Coin</span><span class="c-price">Price</span><span class="c-chg">24h</span><span class="c-vol">Volume</span><span class="c-liq">Liquidity</span><span class="c-act">Mint</span></div>
+        <div id="rows"></div>
+        <div class="board-note" id="board-note" data-kind="info">Reading the feed&hellip;</div>
+      </div>
+    </section>
+
+    <section class="section" id="flow">
+      <div class="s-head" data-reveal><h2>Flow</h2><span class="sub">Three moves, zero order book</span></div>
+      <div class="grid3" data-stagger>
+        <article class="card flow" data-spot data-reveal><span class="n">1</span><h3>Propose</h3><p>Choose a stack and attach your figure. The proposal goes to whoever holds it.</p></article>
+        <article class="card flow" data-spot data-reveal><span class="n">2</span><h3>Agreed</h3><p>The holder reviews your figure from their own key. They can accept, haggle back, or let it lapse.</p></article>
+        <article class="card flow" data-spot data-reveal><span class="n">3</span><h3>Delivered</h3><p>Both sides sign. Tokens and payment trade places inside the same Solana transaction.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="facts">
+      <div class="s-head" data-reveal><h2>Facts</h2><span class="sub">Only what has been confirmed</span></div>
+      <div class="card facts" data-reveal data-spot>
+        <ul>
+          <!--@facts-->
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="risks">
+      <div class="s-head" data-reveal><h2>Risks</h2></div>
+      <div class="card risk" data-reveal><p><b>Meme tokens swing hard and can fall to zero.</b> Board figures are public market data passed along as received, which makes them reference material and never advice. Sign only what you have read, and compare each address with the address published in the Facts panel before you act.</p></div>
+    </section>
+
+    <footer class="foot"><span>Size</span><span>size.bargains</span><span>Solana</span></footer>
+  </main>
+</div>
+
+<script type="application/json" id="register"><!--@register--></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
